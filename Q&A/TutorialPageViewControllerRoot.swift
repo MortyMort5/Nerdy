@@ -2,8 +2,8 @@
 //  TutorialPageViewControllerRoot.swift
 //  Q&A
 //
-//  Created by Demick McMullin on 4/24/17.
-//  Copyright © 2017 Christian McMullin. All rights reserved.
+//  Created by Sterling Mortensen on 4/24/17.
+//  Copyright © 2017 Sterling Mortensen. All rights reserved.
 //
 
 import UIKit
