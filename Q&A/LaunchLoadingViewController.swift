@@ -25,7 +25,7 @@ class LaunchLoadingViewController: UIViewController, HolderViewDelegate {
         }
     }
     
-    func segueToProfile() {
+    @objc func segueToProfile() {
         UserController.shared.loggedInUser = user
         if user != nil {
             self.performSegue(withIdentifier: "toProfilePage", sender: self)

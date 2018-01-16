@@ -64,7 +64,7 @@ class ReadyCheckViewController: UIViewController, UITableViewDataSource {
         dismiss(animated: true, completion: nil)
     }
     
-    func performUpdate() {
+    @objc func performUpdate() {
         guard let topic = TopicController.shared.currentTopic else { return }
         TopicController.shared.fetchUsersForTopic(topic: topic ) {
             self.readyUsers = 0

@@ -21,7 +21,7 @@ class ReadyCheckTableViewCell: UITableViewCell {
         }
     }
     
-    func updateViewsWithNotification() {
+    @objc func updateViewsWithNotification() {
         guard let topic = TopicController.shared.currentTopic else { return }
         TopicController.shared.fetchUsersForTopic(topic: topic) {
             

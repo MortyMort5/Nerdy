@@ -20,8 +20,8 @@ class WelcomeViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         pictureFrameCircular()
-        firstNameTextField.attributedPlaceholder = NSAttributedString(string: "First Name:", attributes: [NSForegroundColorAttributeName: UIColor.white])
-        lastNameTextField.attributedPlaceholder = NSAttributedString(string: "Last Name:", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        firstNameTextField.attributedPlaceholder = NSAttributedString(string: "First Name:", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        lastNameTextField.attributedPlaceholder = NSAttributedString(string: "Last Name:", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         firstNameBorderWhite()
         lastNameBoarderWhite()
         nextButtonBoarderWhite()

@@ -212,7 +212,7 @@ class QueueViewController: UIViewController, UITableViewDelegate, UITableViewDat
         })
     }
     
-    func checkTopicsReadyCheckBool() {
+    @objc func checkTopicsReadyCheckBool() {
         guard let topic = topic else { return }
         TopicController.shared.fetchTopic(topic: topic) {
             guard let currentTopic = TopicController.shared.currentTopic else { return }
@@ -229,13 +229,13 @@ class QueueViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-    func refreshTableView() {
+    @objc func refreshTableView() {
         DispatchQueue.main.async {
             self.questionTableView.reloadData()
         }
     }
     
-    func refreshQuestionData() {
+    @objc func refreshQuestionData() {
         if let topic = topic {
             QuestionController.shared.fetchQuestionsWithTopicRef(topic: topic, completion: { (_) in
                 DispatchQueue.main.async {
